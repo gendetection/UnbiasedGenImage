@@ -48,6 +48,8 @@ To do inference on own datasets, you have to create a CSV file and slightly adju
   <em>Cross-Generator Performance when training Swin-T on constrained dataset</em>
 </p>
 
+<br>
+
 <p align="center">
   <img src="results/results_swin_diff.png" width="80%" />
   <br>
