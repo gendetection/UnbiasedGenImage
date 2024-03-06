@@ -1,6 +1,6 @@
 # 🌟 Fake or JPEG? Revealing Common Biases in Generated Image Detection Datasets
 
-This repository corresponds to our 📚📄 [Paper](https://www.unbiased-genimage.org) towards Biases in datasets for AI-Generated Images Detection. As discussed detailed in the paper, experiments are examined on the [GenImage](https://genimage-dataset.github.io/) dataset. 
+This 🖥️📦 [repository](https://github.com/gendetection/UnbiasedGenImage) corresponds to our 📚📄 [Paper](https://www.unbiased-genimage.org) towards Biases in datasets for AI-Generated Images Detection. As discussed detailed in the paper, experiments are examined on the [GenImage](https://genimage-dataset.github.io/) dataset. 
 
 ### Download
 
