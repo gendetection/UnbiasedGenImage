@@ -1,6 +1,6 @@
 # 🌟 Fake or JPEG? Revealing Common Biases in Generated Image Detection Datasets
 
-This 🖥️📦 [repository](https://github.com/gendetection/UnbiasedGenImage) corresponds to our 📚📄 [Paper](https://www.unbiased-genimage.org) towards Biases in datasets for AI-Generated Images Detection. As discussed detailed in the paper, experiments are examined on the [GenImage](https://genimage-dataset.github.io/) dataset. 
+This 🖥️📦 [Repository](https://github.com/gendetection/UnbiasedGenImage) corresponds to our 📚📄 [Paper](https://www.unbiased-genimage.org) towards Biases in datasets for AI-Generated Images Detection. As discussed detailed in the paper, experiments are examined on the [GenImage](https://genimage-dataset.github.io/) dataset. 
 
 ### Download
 
@@ -8,7 +8,7 @@ This 🖥️📦 [repository](https://github.com/gendetection/UnbiasedGenImage) 
 
 ## Code details
 
-We provide code for training and validating ResNet50 and Swin-T detectors. This aims to show that:
+We provide [Code](https://github.com/gendetection/UnbiasedGenImage) for training and validating ResNet50 and Swin-T detectors. This aims to show that:
 
 1. Detectors trained on the raw GenImage dataset actually learn from existing Biases in compression and image size.
 2. Mitigating these Biases leads to significantly improved Cross-Generator Performance and Robustness towards JPEG-Compression, achieving state-of-the-art results.
