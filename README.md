@@ -6,11 +6,15 @@ This 🖥️📦 [Repository](https://github.com/gendetection/UnbiasedGenImage) 
 
 ⬇️ We provide an easy GenImage download here: [DOWNLOAD](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FAKDIHF). Furthermore, we removed corrupted files in the GenImage download and added a metadata CSV. This CSV is needed for our training and validation code and contains additional information like content classes of each image which is not part of the original dataset.
 <br>
-use our download-script like this, since the web interface doesn't allow downloading all files at one: 
+Use our download-script like this, since the web interface doesn't allow downloading all files at one: 
 
 ```bash
 python download_genimage.py <--continue> <--destination {path}>
 ```
+
+- `--continue`: Optional. Skip files if they already exist. Default is to start a new download.
+- `--destination {path}`: Optional. Specify a custom directory where the files should be downloaded. Default is ./GenImage_download
+
 
 ## Code details
 
