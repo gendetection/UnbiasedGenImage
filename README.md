@@ -4,7 +4,7 @@ This 🖥️📦 [Repository](https://github.com/gendetection/UnbiasedGenImage) 
 
 ### Download
 
-⬇️ We provide an easy GenImage download here: [DOWNLOAD](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FAKDIHF). Furthermore, we removed corrupted files in the GenImage download and added a metadata CSV. This CSV is needed for our training and validation code and contains additional information like content classes of each image which is not part of the original dataset.
+⬇️ We provide an easy GenImage download here (~500GB): [DOWNLOAD](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FAKDIHF). Furthermore, we removed corrupted files in the GenImage download and added a metadata CSV. This CSV is needed for our training and validation code and contains additional information like content classes of each image which is not part of the original dataset.
 <br>
 Use our download-script like this, since the web interface doesn't allow downloading all files at one: 
 
