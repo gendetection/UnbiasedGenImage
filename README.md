@@ -16,6 +16,7 @@ python download_genimage.py <--continue> <--destination {path}>
 - `--destination {path}`: Optional. Specify a custom directory where the files should be downloaded. Default is ./GenImage_download
 <br>
 Then get the final zip file using:
+
 ```bash
 cat GenImage.z* > ../GenImage_restored.zip
 ```
