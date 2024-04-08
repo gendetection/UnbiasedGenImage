@@ -14,6 +14,11 @@ python download_genimage.py <--continue> <--destination {path}>
 
 - `--continue`: Optional. Skip files if they already exist. Default is to start a new download.
 - `--destination {path}`: Optional. Specify a custom directory where the files should be downloaded. Default is ./GenImage_download
+<br>
+Then get the final zip file using:
+```bash
+cat GenImage.z* > ../GenImage_restored.zip
+```
 
 ℹ️ NOTE: By now, there's an easy GenImage download on [Google Drive](https://drive.google.com/drive/folders/1jGt10bwTbhEZuGXLyvrCuxOI0cBqQ1FS). We recommend downloading the GenImage dataset there and only downloading the metadata.csv from our dataverse. ℹ️
 
