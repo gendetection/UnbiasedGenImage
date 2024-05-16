@@ -2,11 +2,15 @@
 
 This 🖥️📦 [Repository](https://github.com/gendetection/UnbiasedGenImage) corresponds to our 📚📄 [Paper](https://www.unbiased-genimage.org) towards Biases in datasets for AI-Generated Images Detection. As discussed detailed in the paper, experiments are examined on the [GenImage](https://genimage-dataset.github.io/) dataset. 
 
-### Download
+# Unbiased GenImage dataset
 
-⬇️ We provide an easy GenImage download here (~500GB): [DOWNLOAD](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FAKDIHF). Furthermore, we removed corrupted files in the GenImage download and added a metadata CSV. This CSV is needed for our training and validation code and contains additional information like content classes of each image which is not part of the original dataset.
+### 1) Download
+
+To use our Unbiased GenImage dataset, you first need to download the original GenImage dataset and our additional metadata CSV which contains additional information about jpeg QF, size and content of each image. This CSV is needed for our training and validation code.
+
+⬇️ We provide an easy GenImage (and metadata CSV) download here (~500GB): [DOWNLOAD](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FAKDIHF). Furthermore, we removed corrupted files from the BAIDU GenImage download.
 <br>
-Use our download-script like this, since the web interface doesn't allow downloading all files at one: 
+Use our download-script like this, since the web interface doesn't allow downloading all files together:
 
 ```bash
 python download_genimage.py <--continue> <--destination {path}>
@@ -22,6 +26,10 @@ cat GenImage.z* > ../GenImage_restored.zip
 ```
 
 ℹ️ NOTE: By now, there's an easy GenImage download on [Google Drive](https://drive.google.com/drive/folders/1jGt10bwTbhEZuGXLyvrCuxOI0cBqQ1FS). We recommend downloading the GenImage dataset there and only downloading the metadata.csv from our dataverse. ℹ️
+
+### 2) Remove biases:
+
+As shown in our training code of the detectors (-> get_data.py and get_transform.py), you can create our Unbiased Genimage dataset by selecting the subset of images in a specific size range (or by content classes). Then align the jpeg QG using jpeg_augment.py.
 
 ## Code details
 
