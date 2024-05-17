@@ -31,6 +31,16 @@ cat GenImage.z* > ../GenImage_restored.zip
 
 As shown in our training code of the detectors (-> get_data.py and get_transform.py), you can create our Unbiased Genimage dataset by selecting the subset of images in a specific size range (or by content classes). Then align the jpeg QG using jpeg_augment.py.
 
+Example to create the (by size and compression) unbiased Wukong (512x512 px) subset:
+```bash
+df = pd.read_csv("metadata.csv")
+df_unbiased_natural = df[ (df["generator"] == "nature") & (df["width"] >= 450) & (df["height"] >= 450) & (df["width"] <= 550) & (df["height"] <= 550) & (df["compression_rate"] == 96)]
+df_unbiased_ai = df[ (df["generator"] == "wukong") ]
+df_unbiased = pd.concat([df_unbiased_natural, df_unbiased_ai])
+```
+
+
+
 ## Code details
 
 We provide [Code](https://github.com/gendetection/UnbiasedGenImage) for training and validating ResNet50 and Swin-T detectors. This aims to show that:
